@@ -6,6 +6,18 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 
 ---
 
+## [2.1.0] - 2026-03-24
+
+### Added
+
+**Development (04-DEV)**
+
+- `T31` — Development History & Complete Audit Log: A unified, append-only development audit trail covering 9 typed log sections (§4 Release & Deployment Log, §5 Code Merge Log, §6 Incident Log, §7 Architectural Decision Log, §8 Configuration & Infrastructure Log, §9 Security & Dependency Log, §10 Release Summary Dashboard). Governed by the append-only rule: entries are never modified — only AMENDMENT entries added.
+
+**Meta & Guidance (00-META)**
+
+- `META-GLOBAL-TRACE-01` — Traceability Report: A two-part report proving complete artefact coverage. Includes a dashboard (§2–3) for coverage by folder (11 domains, 33 governed outputs, 139 source artefacts traced), mapping pattern breakdown (Direct / Merged / Elevated / Absorbed / Split), and a 7-row gap coverage proof table. Features a full matrix (§4) tracing one row per source artefact across all 10 domains with mapping rationale notes and a verified 5-check orphan confirmation (zero unowned artefacts, zero empty templates, all gaps closed).
+
 ## [2.0.0] - 2026-03-24
 
 ### Added
