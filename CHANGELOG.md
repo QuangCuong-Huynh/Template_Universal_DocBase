@@ -11,24 +11,29 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ### Added
 
 **Data Governance (09-DATA-GOVERNANCE)**
+
 - `T19` — Data Governance Framework (policies, ownership, stewardship, DQ)
 - `T20` — Data Dictionary & Classification Register (field-level: PII/SPII/Internal/Public)
 - `T21` — Data Retention & Disposal Policy
 
 **Naming Conventions (10-NAMING-CONVENTIONS)**
+
 - `T22` — Master Naming & Code Convention Standard (DB tables/columns, APIs, code, files, branches, environments)
 - `T23` — Database Schema & Object Naming Standard
 - `T24` — API Design & Versioning Standard
 
 **Quality Management System (08-QMS)**
+
 - `T25` — RBAC & Access Control Standard
 - `T26` — Change Management & Configuration Control Standard
 
 **Governance, Risk & Compliance (07-GRC)**
+
 - `T27` — Privacy Impact Assessment (PIA / DPIA)
 - `T28` — Vendor & Third-Party Risk Assessment
 
 **Development (04-DEV)**
+
 - `T29` — Development & Coding Standards
 - `T30` — CI/CD & Deployment Standard
 
@@ -132,5 +137,6 @@ This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.htm
 ## [Unreleased]
 
 > Planned additions for future release:
+>
 > - GitHub Actions workflow for template linting
 > - Automated placeholder validation script
