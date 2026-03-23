@@ -3,15 +3,15 @@
 **A complete, standards-aligned library of professional project document templates for software development teams.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE.txt)
-[![Templates](https://img.shields.io/badge/Templates-18-blue.svg)]()
+[![Templates](https://img.shields.io/badge/Templates-31-blue.svg)]()
 [![Standard](https://img.shields.io/badge/Standard-ISO%2027001%20%7C%20ISO%209001%20%7C%20OWASP%20ASVS-green.svg)]()
-[![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)](CHANGELOG.md)
+[![Version](https://img.shields.io/badge/Version-2.1.0-brightgreen.svg)](CHANGELOG.md)
 
 ---
 
 ## What Is This?
 
-The **Universal Project Document Base** (Universal DocBase) is a structured library of 20 production-ready `.docx` templates covering every stage of a software project lifecycle — from project kick-off through architecture, requirements, quality assurance, security governance, and formal release.
+The **Universal Project Document Base** (Universal DocBase) is a structured library of 33 production-ready `.docx` and `.md` templates (Dual Format) covering every stage of a software project lifecycle — from project kick-off through architecture, requirements, quality assurance, security governance, and formal release.
 
 Every template is:
 
@@ -24,50 +24,69 @@ Every template is:
 
 ## Repository Structure
 
-```
+```text
 universal-docbase/
 │
 ├── 00-META/                          # Governance layer
-│   ├── META-GLOBAL-FRAMEWORK-01.docx   Framework Constitution (ID taxonomy, lifecycle, authority)
-│   └── META-GLOBAL-INDEX-01.docx       Master Registry & Adaptation Guide (this library's index)
+│   ├── META-GLOBAL-FRAMEWORK-01        Framework Constitution (ID taxonomy, lifecycle, authority)
+│   ├── META-GLOBAL-INDEX-01            Master Registry & Adaptation Guide (this library's index)
+│   └── META-GLOBAL-TRACE-01            Traceability Report (complete artefact coverage)
 │
 ├── 01-PM/                            # Project Management
-│   ├── T01_PM-PROJECT-CHARTER.docx
-│   ├── T02_PM-STATUS-REPORT.docx
-│   └── T03_PM-CLOSURE-REPORT.docx
+│   ├── T01_PM-PROJECT-CHARTER
+│   ├── T02_PM-STATUS-REPORT
+│   └── T03_PM-CLOSURE-REPORT
 │
 ├── 02-BA/                            # Business Analysis
-│   ├── T04_BA-SRS.docx                 Software Requirements Specification
-│   ├── T05_BA-UAC.docx                 User Acceptance Criteria
-│   └── T06_BA-SYSRS.docx               System Requirements Specification
+│   ├── T04_BA-SRS                      Software Requirements Specification
+│   ├── T05_BA-UAC                      User Acceptance Criteria
+│   └── T06_BA-SYSRS                    System Requirements Specification
 │
 ├── 03-ARCH/                          # Architecture & Design
-│   ├── T07_ARCH-HLD.docx               High-Level Design Document
-│   └── T08_ADR-ARCHITECTURE-DECISION-RECORD.docx
+│   ├── T07_ARCH-HLD                    High-Level Design Document
+│   └── T08_ADR-ARCHITECTURE-DECISION-RECORD
 │
-├── 04-DEV/                           # Development (extend here)
+├── 04-DEV/                           # Development
+│   ├── T29_DEV-CODING-STANDARDS        Development & Coding Standards
+│   ├── T30_DEV-CICD-STANDARD           CI/CD & Deployment Standard
+│   └── T31_DEV-HISTORY-AUDIT-LOG       Development History & Complete Audit Log
 │
 ├── 05-QA/                            # Quality Assurance
-│   ├── T12_QA-MASTER-TEST-PLAN.docx
-│   ├── T13_QA-PLAN.docx
-│   └── T14_QA-RISK-REGISTER.docx
+│   ├── T12_QA-MASTER-TEST-PLAN
+│   ├── T13_QA-PLAN
+│   └── T14_QA-RISK-REGISTER
 │
 ├── 06-QC/                            # Quality Control
-│   ├── T15_QC-QUALITY-CONTROL-REPORT.docx
-│   ├── T16_QC-DEFECT-BUG-REPORT.docx
-│   ├── T17_QC-TEST-CYCLE-REPORT.docx
-│   └── T18_QC-RELEASE-READINESS-REPORT.docx
+│   ├── T15_QC-QUALITY-CONTROL-REPORT
+│   ├── T16_QC-DEFECT-BUG-REPORT
+│   ├── T17_QC-TEST-CYCLE-REPORT
+│   └── T18_QC-RELEASE-READINESS-REPORT
 │
 ├── 07-GRC/                           # Governance, Risk & Compliance
-│   ├── T09_GRC-SECURITY-COMPENDIUM.docx
-│   └── T10_GRC-COMPLIANCE-MATRIX.docx
+│   ├── T09_GRC-SECURITY-COMPENDIUM
+│   ├── T10_GRC-COMPLIANCE-MATRIX
+│   ├── T27_GRC-PIA                     Privacy Impact Assessment (PIA / DPIA)
+│   └── T28_GRC-VENDOR-RISK             Vendor & Third-Party Risk Assessment
 │
 ├── 08-QMS/                           # Quality Management System
-│   └── T11_QMS-STANDARD-GUIDELINE.docx
+│   ├── T11_QMS-STANDARD-GUIDELINE
+│   ├── T25_QMS-RBAC-STANDARD           RBAC & Access Control Standard
+│   └── T26_QMS-CHANGE-MANAGEMENT       Change Management & Configuration Control
+│
+├── 09-DATA-GOVERNANCE/               # Data Governance
+│   ├── T19_DATA-GOVERNANCE-FRAMEWORK
+│   ├── T20_DATA-DICTIONARY
+│   └── T21_DATA-RETENTION-POLICY
+│
+├── 10-NAMING-CONVENTIONS/            # Naming Conventions
+│   ├── T22_NAMING-CONVENTION-STANDARD
+│   ├── T23_DB-NAMING-STANDARD
+│   └── T24_API-DESIGN-STANDARD
 │
 ├── 99-ARCHIVE/                       # Retired & superseded versions
 │
 ├── .github/
+│   ├── workflows/                      GitHub Actions
 │   ├── CONTRIBUTING.md
 │   └── pull_request_template.md
 │
@@ -113,8 +132,9 @@ universal-docbase/
 
 | ID | File | Purpose |
 |---|---|---|
-| META-GLOBAL-FRAMEWORK-01 | `00-META/META-GLOBAL-FRAMEWORK-01.docx` | ID taxonomy, ISO control standard, document lifecycle, authority model |
-| META-GLOBAL-INDEX-01 | `00-META/META-GLOBAL-INDEX-01.docx` | Master registry, dependency map, onboarding guide, governance rules |
+| META-GLOBAL-FRAMEWORK-01 | `00-META/META-GLOBAL-FRAMEWORK-01` | ID taxonomy, ISO control standard, document lifecycle, authority model |
+| META-GLOBAL-INDEX-01 | `00-META/META-GLOBAL-INDEX-01` | Master registry, dependency map, onboarding guide, governance rules |
+| META-GLOBAL-TRACE-01 | `00-META/META-GLOBAL-TRACE-01` | Traceability Report, full 139-artefact coverage mapping, 5-check orphan confirmation |
 
 ### Project Management (PM)
 
@@ -143,14 +163,18 @@ universal-docbase/
 
 | # | ID Pattern | File | Purpose |
 |---|---|---|---|
-| T09 | `GRC-[PROJECT]-SEC` | `07-GRC/T09_GRC-SECURITY-COMPENDIUM.docx` | Security principles, IAM, data classification, incident response, compliance. |
-| T10 | `QA-[PROJECT]-COMP-MTX` | `07-GRC/T10_GRC-COMPLIANCE-MATRIX.docx` | Maps each clause of ISO 27001 / GDPR / OWASP / ISO 9001 to project controls. |
+| T09 | `GRC-[PROJECT]-SEC` | `07-GRC/T09_GRC-SECURITY-COMPENDIUM` | Security principles, IAM, data classification, incident response, compliance. |
+| T10 | `QA-[PROJECT]-COMP-MTX` | `07-GRC/T10_GRC-COMPLIANCE-MATRIX` | Maps each clause of ISO 27001 / GDPR / OWASP / ISO 9001 to project controls. |
+| T27 | `GRC-[PROJECT]-PIA` | `07-GRC/T27_GRC-PIA` | Privacy Impact Assessment (PIA / DPIA) for GDPR Article 35. |
+| T28 | `GRC-[PROJECT]-VENDOR` | `07-GRC/T28_GRC-VENDOR-RISK` | Vendor & Third-Party Risk Assessment matrix. |
 
 ### Quality Management System (QMS)
 
 | # | ID Pattern | File | Purpose |
 |---|---|---|---|
-| T11 | `QMS-[PROJECT]-STD` | `08-QMS/T11_QMS-STANDARD-GUIDELINE.docx` | Universal template for any organizational standard (RBAC, naming, coding). |
+| T11 | `QMS-[PROJECT]-STD` | `08-QMS/T11_QMS-STANDARD-GUIDELINE` | Universal template for any organizational standard. |
+| T25 | `QMS-[PROJECT]-RBAC` | `08-QMS/T25_QMS-RBAC-STANDARD` | Formal RBAC and Access Control baseline. |
+| T26 | `QMS-[PROJECT]-CHANGE` | `08-QMS/T26_QMS-CHANGE-MANAGEMENT` | Change Management & Configuration Control Standard. |
 
 ### Quality Assurance (QA)
 
@@ -227,6 +251,7 @@ Full cross-reference matrix: `00-META/META-GLOBAL-INDEX-01.docx` §6.
 ## Authoring Standards
 
 See `STANDARDS.docx` for the complete working document authoring standard covering:
+
 - How to use the templates
 - Placeholder replacement rules
 - ID assignment procedure
@@ -241,6 +266,7 @@ See `STANDARDS.docx` for the complete working document authoring standard coveri
 See [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md) for the full contribution guide.
 
 **Quick summary:**
+
 1. Fork the repository
 2. Create a branch: `feat/template-[domain]-[name]` or `fix/[template-id]-[issue]`
 3. Follow the authoring standard in `STANDARDS.docx`
@@ -254,7 +280,7 @@ See [`.github/CONTRIBUTING.md`](.github/CONTRIBUTING.md) for the full contributi
 
 See [CHANGELOG.md](CHANGELOG.md) for full release history.
 
-**Latest:** [v1.0.0](CHANGELOG.md) — Initial release. 20 documents across 8 domains.
+**Latest:** [v2.1.0](CHANGELOG.md) — Traceability report, Development Audit Log, Data Governance, Naming Conventions, and Dual Format (`.docx` & `.md`).
 
 ---
 
